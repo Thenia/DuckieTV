@@ -1,15 +1,8 @@
 <!doctype html>
 <html ng-app="DuckieTV" ng-csp ng-strict-di>
-
 <head>
   <meta charset="UTF-8">
   <title>DuckieTV</title>
-
-  <!-- deploy:replace='<script src="dist/app.standalone.js"></script>' -->
-  <script src="js/app.standalone.windowdressing.js"></script>
-  <script src="js/app.standalone.systray.js"></script>
-  <script src="js/app.standalone.zoom.js"></script>
-  <!-- /deploy:replace -->
 
   <!-- deploy:replace='<link rel="stylesheet" href="dist/style.css">' -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -24,7 +17,6 @@
   <!-- /deploy:replace -->
   <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
 </head>
-
 <body kc>
   <div class="windowChrome">
     <button class="glyphicon glyphicon-win-minimize" id='minimize' uib-tooltip="{{ 'COMMON/minimize/btn'|translate }}" tooltip-placement="bottom"></button>
@@ -130,6 +122,9 @@
   <script src="js/app.routes.js"></script>
   <script src="js/app.standalone.update.js"></script>
   <script src="js/app.translate.js"></script>
+  <script src="js/app.standalone.windowdressing.js"></script>
+  <script src="js/app.standalone.systray.js"></script>
+  <script src="js/app.standalone.zoom.js"></script>
   <script src="js/controllers/ActionBarCtrl.js"></script>
   <script src="js/controllers/WatchlistCtrl.js"></script>
   <script src="js/controllers/serieslist/LocalSeriesCtrl.js"></script>
@@ -215,9 +210,9 @@
   <script src="js/services/TorrentClients/BaseTorrentClient.js"></script>
   <script src="js/services/TorrentClients/TorrentData.js"></script>
   <script src="js/services/TorrentClients/Deluge.js"></script>
-  <script src="js/services/TorrentClients/rTorrent.js"></script>
   <script src="js/services/TorrentClients/qBittorrentPre32.js"></script>
   <script src="js/services/TorrentClients/qBittorrent32plus.js"></script>
+  <script src="js/services/TorrentClients/rTorrent.js"></script>
   <script src="js/services/TorrentClients/Tixati.js"></script>
   <script src="js/services/TorrentClients/Transmission.js"></script>
   <script src="js/services/TorrentClients/uTorrent.js"></script>
@@ -227,14 +222,14 @@
   <script src="js/services/TorrentSearchEngines/GenericTorrentSearchEngine.js"></script>
   <script src="js/services/TorrentSearchEngines/KickassMirrorResolver.js"></script>
   <script src="js/services/TorrentSearchEngines/ThePirateBayMirrorResolver.js"></script>
+  <script src="js/services/TorrentSearchEngines/Torrentz.eu.js"></script>
+  <script src="js/services/TorrentSearchEngines/ExtraTorrent.js"></script>
   <script src="js/services/TorrentSearchEngines/IsoHunt.js"></script>
   <script src="js/services/TorrentSearchEngines/Kickass.js"></script>
   <script src="js/services/TorrentSearchEngines/Nyaa.js"></script>
   <script src="js/services/TorrentSearchEngines/RarBG.js"></script>
   <script src="js/services/TorrentSearchEngines/ShowRSS.js"></script>
   <script src="js/services/TorrentSearchEngines/ThePirateBay.js"></script>
-  <script src="js/services/TorrentSearchEngines/Torrentz.eu.js"></script>
-  <script src="js/services/TorrentSearchEngines/ExtraTorrent.js"></script>
   <script src="js/services/TorrentSearchEngines/Zooqle.js"></script>
   <script src="js/services/UpgradeNotificationService.js"></script>
   <script src="js/services/TorrentFreak.js"></script>
@@ -247,5 +242,4 @@
   <script src="js/services/ChromeStorageSyncTarget.js"></script>
   <!-- /deploy:replace -->
 </body>
-
 </html>
